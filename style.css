@@ -1,12 +1,12 @@
 *{
     box-sizing: border-box;
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
 }
 .flex-container{
     display:flex;
     width: 100vw;
-    height: 100vh;
+    height: calc(100vh - 80px);
     background-color: rgb(2, 2, 2);
     position: relative;
     
@@ -32,10 +32,11 @@
 .menu{
     width: 90vw;
     height: 80vh;
-    
     justify-content: center;
     align-self: center;
     flex-wrap: wrap;
+    overflow: scroll;
+    margin: 0 auto;
 }
 
 .flex{
@@ -63,4 +64,35 @@
     width: 50%;
     color: white;
 }
+.nav-link p{
+    color: white;
+}
+footer{
+    height: 60px;
+    width: 100%;
+    background-color: rgba(48, 48, 48, 0.644);
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+
+}
     
+ #center-bar{
+     width: 40%;
+     justify-content: space-between;
+ }
+ footer i{
+     font-size: 2rem;
+     color: white;
+ }
+ #left-bar{
+     margin-left: 10px;
+ }
+ .mini-container{
+     height: 60px;
+     padding: 1em;
+     background-color: lightgray
+ }
+ .mini-container span{
+     color: red;
+ }
